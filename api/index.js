@@ -38,10 +38,7 @@ app.use(express.json());
 
 // CORS
 app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-  })
+  cors()
 );
 
 // use express router
