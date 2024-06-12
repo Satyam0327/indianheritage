@@ -39,7 +39,7 @@ app.use(express.json());
 // CORS
 app.use(
   cors({
-    origin: 'https://indianheritage-ssec.vercel.app/',
+    origin: process.env.CLIENT_URL,
     credentials: true,
   })
 );
